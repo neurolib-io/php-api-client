@@ -1,0 +1,30 @@
+{
+    "name": "neurolib/php-api-client",
+    "description": "PHP client for easy use of the Neurolib recommendation API.",
+    "homepage": "https://neurolib.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neurolib",
+            "email": "tech@neurolib.io"
+        }
+    ],
+    "require": {
+      "php": ">=7.2.0",
+      "guzzlehttp/guzzle": "^6.0.0 || ^7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2.2",
+        "phpdocumentor/phpdocumentor": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Neurolib\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Neurolib\\NeurolibApi\\Tests\\": "tests/"
+        }
+    }
+}
